@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* ### Neutral */
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(/images/bg-pattern-top-mobile.svg) no-repeat;
+}
+
+/* Heading Start */
+.header {
+    margin-top: 5rem;
+}
+
+.text-container {
+    text-align: center;
+    margin: 0 1.5rem 2rem;
+}
+.text-container h1 {
+    color: var(--very-dark-magenta);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+.text-container p {
+    color: var(--dark-grayish-magenta);
+    line-height: 1.5rem;
+}
+
+/* Heading End */
+
+/* Rates Start */
+
+.rates {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.rate {
+    background-color: var(--light-grayish-magenta);
+    margin: 0 1.5rem 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.rate h4 {
+    color: var(--very-dark-magenta);
+    margin-top: 0.5rem;
+}
+
+/* Rates End */
+
+/* Boxes Start */
+
+.box-container {
+    margin-bottom: 5rem;
+}
+
+.box {
+    background-color: var(--very-dark-magenta);
+    margin: 0 1.5rem 1rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.box p, h4 {
+    color: white;
+}
+
+.box .pink-text {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+.box img {
+    border-radius: 50%;
+    height: 2.5rem;
+    margin-right: 2rem;
+}
+
+.box .info {
+    display: flex;
+    margin-bottom: 2rem;
+}
+/* Boxes End */
+
+@media (min-width: 1100px)
+{
+    body {
+        background: url(/images/bg-pattern-top-desktop.svg) top left no-repeat, url(/images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header {
+        display: flex;
+    }
+    .text-container {
+        width: 30%;
+        text-align: left;
+        margin-right: 4rem;
+    }
+    .rate {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    .rates-stars {
+        margin: 0 1.5rem;
+    }
+    .rates {
+        text-align: left;
+    }
+    .rates-top {
+        margin-left: 5rem;
+    }
+    .rates-mid {
+        margin-left: 8rem;
+    }
+    .rates-bot {
+        margin-left: 11rem;
+    }
+    .box-container {
+        display: flex;
+    }
+    .box-1, .box-2 {
+        margin-right: 0.5rem;
+    }
+    .box-2 {
+        position: relative;
+        top: 1rem;
+    }
+    .box-3 {
+        position: relative;
+        top: 2rem;
+    }
+}
